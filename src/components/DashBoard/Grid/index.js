@@ -5,6 +5,10 @@ import TrendingDownRoundedIcon from '@mui/icons-material/TrendingDownRounded';
 import { Link } from 'react-router-dom';
 
 function Grid({coin}) {
+   
+
+
+
   return (
     <Link to={`/coin/${coin.id}`}>
     <div className={`grid-container ${coin.price_change_percentage_24h < 0 && "grid-container-red"}`} >
@@ -14,6 +18,11 @@ function Grid({coin}) {
                 <p className='coin-symbol'>{coin.symbol}</p>
                 <p className='coin-name'>{coin.name}</p>
             </div>
+           {/* <Link to="/watchList">
+           <button  onClick={handleWatchList} style={{color:"var(--blue)",marginLeft:"3.5rem"}}>+</button>
+           </Link> */}
+           
+            
            
         </div>
         {coin.price_change_percentage_24h > 0?(
@@ -21,6 +30,7 @@ function Grid({coin}) {
             <div className='price-chip'>{coin.price_change_percentage_24h.toFixed(2)}%</div>
             <div className='icon-chip'>
             <TrendingUpRoundedIcon/>
+            
          </div>
         </div>
          
@@ -29,6 +39,7 @@ function Grid({coin}) {
                 <div className='price-chip chip-red'>{coin.price_change_percentage_24h.toFixed(2)}%</div>
                 <div className='icon-chip chip-red'>
             <TrendingDownRoundedIcon/>
+            
          </div>
 
             </div>

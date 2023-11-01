@@ -6,7 +6,7 @@ function CoinInfo({heading,desc}) {
     const longDesc = desc + "<span style='color:var(--grey)'> Read less... </span>";
     const [flag,setFlag]=useState(true)
   return (
-    <div className='grey-wrapper'>
+    <div className='grey-wrapper' style={{padding:"0rem 1rem"}}>
         <h2 className='coin-info-heading'>{heading}</h2>
         {desc.length<350?
         (<p className='coin-info-desc'

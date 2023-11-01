@@ -13,7 +13,7 @@ export const getCoinData=(id)=>
             {
   
     // alert("oops! some error occured in the data fetching")
-    console.log("error occured: "+error);
+    console.log("ERROR OCCUREDDD WITH: "+id+">>>"+error);
     
         })
 

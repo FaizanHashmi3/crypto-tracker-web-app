@@ -36,4 +36,12 @@ a
   padding: 1rem 1rem;
   border-radius: 0.8rem;
 }
+.coins-days-flex
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem;
+  gap:2rem;
+}
 
