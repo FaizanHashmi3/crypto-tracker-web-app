@@ -96,7 +96,7 @@
     {
         display: block;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
     .iphone
     {
@@ -110,11 +110,19 @@
     .left-component
     {
         width: 100%;
+        
     }
+    
     .track-crypto-heading,.real-time-heading
     {
         font-size: 3rem;
-        text-align: center;
+        /* text-align: center; */
+        
+    }
+    .real-time-heading
+    {
+        text-align:left;
+        
     }
     .track-crypto-heading
     {
@@ -122,14 +130,56 @@
     }
     .info-text
     {
-        text-align: center;
+        text-align: left;
     }
+    
+}
+@media only screen and (max-width:470px)
+{
     .btn-flex
     {
         justify-content: center;
     }
+    .phone-container
+    {
+        margin-top:0rem;
+       margin-right: 5rem;
+    }
 }
+@media only screen and (max-width:352px)
+{
+    .track-crypto-heading,.real-time-heading
+    {
+        font-size: 2rem;
+        
+    }
+    .track-crypto-heading
+    {
+      -webkit-text-stroke-width: 1.5px;
+    }
+    /* .phone-container
+    {
+        margin-top:0.15rem;
+    } */
+    /* .btn-flex
+    {
+        justify-content: center;
+    } */
+    
+}
+@media only screen and (max-width:280px)
+{
+    .track-crypto-heading,.real-time-heading
+    {
+        font-size: 1rem;
+        
+    }
+    .track-crypto-heading
+    {
+      -webkit-text-stroke-width: 1px;
+    }
 
+}
 
 
 

@@ -4,6 +4,23 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    /* margin-bottom: 1rem; */
+}
 
+.MuiInputLabel-root
+ {
+ color: var(--white)!important;
+ font-size:15px !important;
+  }
+
+@media only screen and (max-width:445px)
+{
+    .select-days{
+         transform: translateX(-40px); 
+    }
+}
+@media only screen and (max-width:360px)
+{
+    .select-days{
+         transform: translateX(-57px); 
+    }
 }

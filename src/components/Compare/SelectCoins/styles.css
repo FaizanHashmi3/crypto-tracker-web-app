@@ -6,3 +6,34 @@
     gap: 1.5rem;
     margin: 0rem 1.5rem;
 }
+
+
+    .coin-names
+    {
+        display:none;
+    }
+   
+
+
+@media only screen and (max-width:500px)
+{
+    .MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        width: 45px;
+        transform: translateX();
+    }
+}
+@media only screen and (max-width:445px)
+{
+    
+    .coins-flex
+    {
+        transform: translateX(-30px);
+    }
+}
+@media only screen and (max-width:390px)
+{
+    .MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        width: 35px;
+       
+    }
+}

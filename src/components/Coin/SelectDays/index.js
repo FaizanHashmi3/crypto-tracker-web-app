@@ -1,5 +1,6 @@
 import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import './styles.css';
@@ -11,11 +12,13 @@ export default function SelectDays({days,handleDaysChange,noPTag}) {
     <div className='select-days'>
 
        {!noPTag &&  <p>Price Change In</p>}
-       
+       <FormControl>
+       <InputLabel id="demo-simple-select-label">Days</InputLabel>
         <Select
         sx={{
             height:"2.5rem",
             color:"var(--white)",
+            
             "& .MuiOutlinedInput-notchedOutline":
             {
                 borderColor:"var(--white)",
@@ -45,7 +48,9 @@ export default function SelectDays({days,handleDaysChange,noPTag}) {
           <MenuItem value={120}>120 Days</MenuItem>
           <MenuItem value={365}>1 Year</MenuItem>
         </Select>
+        </FormControl>
+       </div>
       
-    </div>
+    // </div>
   );
 }

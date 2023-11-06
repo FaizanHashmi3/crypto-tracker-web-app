@@ -14,13 +14,13 @@ function List({coin}) {
     <tr className='list-row'>
 
         <Tooltip title="Coin Logo"  placement='bottom-start'>
-         <td className='td-image'>
-            <img src={coin.image} className='coin-logo' />
+         <td className='td-image td-image-small'>
+            <img src={coin.image} className='coin-logo ' />
           </td>
         </Tooltip> 
         <Tooltip title="Coin Info"  placement='bottom-start'> 
           <td>   
-            <div className='name-col'>
+            <div className='name-col-small name-col'>
                 <p className='coin-symbol'>{coin.symbol}</p>
                 <p className='coin-name'>{coin.name}</p>
             </div>
@@ -30,7 +30,7 @@ function List({coin}) {
         <Tooltip title="Price Change In 24Hrs" placement='bottom-start'> 
         {coin.price_change_percentage_24h > 0?(
             <td className='chip-flex'>
-            <div className='price-chip'>{coin.price_change_percentage_24h.toFixed(2)}%</div>
+            <div className='price-chip-small price-chip'>{coin.price_change_percentage_24h.toFixed(2)}%</div>
             <div className='icon-chip td-icon'>
             <TrendingUpRoundedIcon/>
          </div>
@@ -38,7 +38,7 @@ function List({coin}) {
          
         ):
         <td className='chip-flex'>
-                <div className='price-chip chip-red'>{coin.price_change_percentage_24h.toFixed(2)}%</div>
+                <div className='price-chip price-chip-small chip-red'>{coin.price_change_percentage_24h.toFixed(2)}%</div>
                 <div className='icon-chip chip-red td-icon'>
             <TrendingDownRoundedIcon/>
          </div>
@@ -48,7 +48,7 @@ function List({coin}) {
          </Tooltip> 
         <Tooltip title="Current Price"  placement='bottom-start'>
        <td>
-        <h3 className='coin-price td-center-align'  style={{color:coin.price_change_percentage_24h < 0 ?"var(--red)":"var(--green)",}} >${coin.current_price.toLocaleString()}</h3>
+        <h3 className='coin-price coin-price-small td-center-align'  style={{color:coin.price_change_percentage_24h < 0 ?"var(--red)":"var(--green)",}} >${coin.current_price.toLocaleString()}</h3>
         </td> 
         </Tooltip>
 

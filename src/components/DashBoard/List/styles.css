@@ -1,15 +1,20 @@
+
 .list-row
 {
+    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 0.5rem;
     margin: 1.5rem;
     border-radius: 1rem;
     padding: 1rem;
+    margin-left: 0;
+    padding-left: 0;
 
 
 }
+
 .list-row:hover
 {
     background-color: var(--darkgrey);
@@ -67,4 +72,95 @@
     {
         display: block;
     }
+}
+@media only screen and (max-width:760px)
+{
+
+    .td-image-small
+    {
+        position: absolute;
+        left: 3%;
+    }
+    .name-col-small
+    {
+        /* background-color: aqua; */
+        position: absolute;
+        left: 13.6%;
+
+    }
+    .coin-price-small
+    {
+        position: absolute;
+        right: 20%;
+        transform: translateY(-13px);
+       
+
+    }
+    .price-chip-small
+    {
+        position: absolute;
+        right: 50%;
+    }
+    
+}
+@media only screen and (max-width:560px )
+{
+    .price-chip-small
+    {
+        width: 37px;
+      
+       
+    }
+    .name-col-small
+    {
+        /* background-color: aqua; */
+        position: absolute;
+        left: 13.6%;
+
+    }
+
+}
+@media only screen and (max-width:510px )
+{
+    .name-col-small
+    {
+        left: 19%;
+       
+    }
+    .price-chip-small
+    {
+        min-width:40px;
+        height: 20px;
+        font-size: 1rem;
+        border-radius: 10px;
+        
+    }
+    .td-image-small
+    {
+        position: absolute;
+        left: 7%;
+    }
+    .coin-price-small
+    {
+        font-size: 1.23rem;
+    }
+}
+@media only screen and (max-width:455px )
+{
+    .td-image-small
+    {
+        position: absolute;
+        left: 10px;
+    }
+}
+@media only screen and (max-width:400px )
+{
+.coin-price-small
+{
+    right:13%;
+}
+.price-chip-small
+{
+    right: 40%;
+}
 }

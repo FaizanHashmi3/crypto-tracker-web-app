@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import './styles.css';
 import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import { get100Coins } from '../../functions/get100Coins';
@@ -12,6 +13,7 @@ function SelectCoins({crypto1,crypto2,handleCoinChange}) {
         {
             height:"2.5rem",
             color:"var(--white)",
+            width:"auto",
             "& .MuiOutlinedInput-notchedOutline":
             {
                 borderColor:"var(--white)",
@@ -44,7 +46,9 @@ function SelectCoins({crypto1,crypto2,handleCoinChange}) {
 
   return (
     <div className='coins-flex'>
-        <p>Crypto 1</p>
+        <p className="coin-names">Crypto 1</p>
+        <FormControl>
+       <InputLabel id="demo-simple-select-label">Crypto 1</InputLabel>
         <Select
             sx={styles}
            value={crypto1}
@@ -56,7 +60,11 @@ function SelectCoins({crypto1,crypto2,handleCoinChange}) {
         <MenuItem key={i} value={coin.id}>{coin.name}</MenuItem>
     ))}
     </Select>
-        <p>Crypto 2</p>
+    </FormControl>
+        <p className="coin-names">Crypto 2</p>
+
+        <FormControl>
+       <InputLabel id="demo-simple-select-label">Crypto 2</InputLabel>
         <Select
             sx={styles}
            value={crypto2}
@@ -68,6 +76,7 @@ function SelectCoins({crypto1,crypto2,handleCoinChange}) {
         <MenuItem value={coin.id}>{coin.name}</MenuItem>
     ))}
     </Select>
+    </FormControl>
     </div>
   );
 }

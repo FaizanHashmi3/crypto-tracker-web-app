@@ -14,3 +14,21 @@
     margin-left: auto;
     margin-right:auto ;
 }
+@media only screen and (max-width:450px)
+{
+    .grid-flex
+    {       
+        margin: 0;
+        gap: 0.35rem;
+    }
+}
+@media only screen and (max-width:370px)
+{
+    .grid-flex
+    {
+       
+        justify-content: flex-start;
+        gap: 0.25rem;
+        
+    }
+}

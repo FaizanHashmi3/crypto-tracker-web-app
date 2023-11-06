@@ -13,6 +13,8 @@
     margin-left:auto ;
     margin-right: auto;
     font-size: 1.2rem;
+    border:  2px solid;
+    
 }
 .search-flex input
 {
@@ -26,4 +28,12 @@
 .search-flex input:focus
 {
 outline: none;
+}
+@media only screen and (max-width:600px)
+{
+    .search-flex
+    {
+      width: 65%; 
+      
+    }
 }

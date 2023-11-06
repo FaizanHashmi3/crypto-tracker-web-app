@@ -65,7 +65,7 @@
     font-weight: 600;
     font-size: 1rem;
     color: var(--green);
-    min-width: 64px;
+    /* min-width: 64px; */
 
 }
 .price-chip:hover
@@ -117,4 +117,109 @@
     color:var(--grey);
     font-size: 1rem;
     font-weight: 500;
+    display: block;
+}
+@media only screen and (max-width:760px)
+{
+    .grid-container
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .total-volume
+    {
+        display: none;
+    }
+    .info-flex
+    {
+        gap: 0.5rem;
+        margin: 0.75rem;
+    }
+    
+    .coin-logo
+    {
+      height: 2.75rem;
+      width: 2.75rem;
+    }
+    .coin-symbol
+{
+   
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+}
+@media only screen and (max-width:560px)
+{
+    .grid-container
+    {
+        width: 175px;
+        height: 175px;
+    }
+    
+    
+    
+    .chip-flex
+{
+    gap: 0.7rem;
+    align-items: center;
+    margin: 1rem 1.5rem;
+}
+.price-chip
+{
+   
+    padding: 0.35rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 37px;
+
+}
+
+}
+@media only screen and (max-width:510px)
+{
+
+    
+    .grid-container
+    {
+        width: 145px;
+        height: 145px;
+    }
+    .price-chip
+{
+   
+    padding: 0.2rem 0.6rem;
+   /* font-weight: 400;
+    font-size: 0.75rem; */
+    min-width: 30px;
+
+}
+.icon-chip
+{
+   
+     height: 1.5rem;
+     width: 1.5rem;
+    /* border: 1px; */
+    /* font-size: 5.4rem; */
+
+
+}
+
+.coin-price
+{
+    
+    font-size: 0.8rem;
+    font-weight: 600;
+  
+}
+
+}
+@media only screen and (max-width:370px)
+{
+    .grid-container
+    {
+        width: 135px;
+        height: 150px;
+    }
 }

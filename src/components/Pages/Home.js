@@ -4,9 +4,13 @@ import MainComponent from '../LandingPage/MainComponent'
 
 function HomePage() {
   return (
-    <div>
-         <Header/>
-         <MainComponent/>
+    <div >
+          
+          <Header/>
+           <MainComponent/>
+          
+        
+        
     </div>
   )
 }

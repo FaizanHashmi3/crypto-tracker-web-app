@@ -4,7 +4,15 @@
   top:40%;
   left:50%;
 }  */
-
+.App{
+  background-color: var(--black);
+  height:100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
