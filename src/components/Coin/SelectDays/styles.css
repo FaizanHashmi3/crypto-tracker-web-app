@@ -5,6 +5,10 @@
     align-items: center;
     gap: 0.5rem;
 }
+.p-tag
+{
+    color: var(--white);
+}
 
 .MuiInputLabel-root
  {
@@ -17,6 +21,13 @@
 {
     .select-days-compare{
          transform: translateX(-67px);
+    }
+    
+}
+@media only screen and (max-width:360px)
+{
+    .select-days-compare{
+         transform: translateX(-75px);
     }
     
 }
