@@ -132,11 +132,14 @@ function ComparePage({handleChange}) {
           handleCoinChange={handleCoinChange}
          crypto2={crypto2} 
          />
+         <div className='select-days-compare'>
          <SelectDays 
          days={days} 
          handleDaysChange={handleDaysChange} 
          noPTag={true}
          />
+         </div>
+         
         </div>
         <div className='grey-wrapper' style={{padding:"0rem 1rem"}}>
               <List coin={crypto1Data}/>

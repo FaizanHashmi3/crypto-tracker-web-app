@@ -11,7 +11,7 @@ export default function SelectDays({days,handleDaysChange,noPTag}) {
   return (
     <div className='select-days'>
 
-       {!noPTag &&  <p>Price Change In</p>}
+       {!noPTag &&  <p className='p-tag'>Price Change In</p>}
        <FormControl>
        <InputLabel id="demo-simple-select-label">Days</InputLabel>
         <Select

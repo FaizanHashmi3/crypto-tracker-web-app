@@ -2,12 +2,14 @@
 {
     margin: 1rem;
     cursor: pointer;
+    color: var(--white);
 
 }
 .coin-info-heading
 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: var(--white);
 
 }
 .coin-info-desc a
