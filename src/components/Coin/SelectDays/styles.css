@@ -24,3 +24,9 @@
          transform: translateX(-57px); 
     }
 }
+@media only screen and (max-width:350px)
+{
+    .select-days{
+         transform: translateX(-67px); 
+    }
+}

@@ -13,9 +13,12 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import {IconButton} from "@mui/material"
 import { Link } from 'react-router-dom';
+import { Switch } from "@mui/material";
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawer({handleChange}) {
   const [open, setOpen] = React.useState(false);
+  
+  const [flag, setFlag] = React.useState(true);
 
   
 
@@ -30,12 +33,16 @@ export default function TemporaryDrawer() {
         <Link to="/compare">
           <p className='link'>Compare</p>
         </Link>
-        {/* <Link to="/watchlist">
-          <p className='link'>Watchlist</p>
-        </Link> */}
         <Link to="/dashboard">
           <p className='link'>Dashboard</p>
         </Link>
+        <Switch 
+          defaultChecked
+          
+       onChange={()=>{
+        setFlag(!flag);
+        handleChange(flag)}}
+      />
        </div> 
      </Drawer>
     </div>

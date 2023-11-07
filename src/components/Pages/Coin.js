@@ -15,7 +15,7 @@ import TogglePriceType from '../Coin/PriceType';
 import SelectDays from '../Coin/SelectDays';
 import { settingChartData } from '../functions/settingChartData';
 
-function CoinPage() {
+function CoinPage({handleChange}) {
     const {id}=useParams();
     const [isLoading,setIsLoading]=useState(true);
     const [coinData,setCoinData]=useState();
@@ -80,7 +80,7 @@ function CoinPage() {
   };
   return (
     <div>
-        <Header/>
+        <Header handleChange={handleChange}/>
         {isLoading?
         (<Loader/>):
         (<>

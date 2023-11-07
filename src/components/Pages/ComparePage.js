@@ -13,7 +13,7 @@ import LineChart from '../Coin/LineChart';
 import PriceType from '../Coin/PriceType';
 import TogglePriceType from '../Coin/PriceType';
 
-function ComparePage() {
+function ComparePage({handleChange}) {
     const [crypto1, setCrypto1] = useState("bitcoin");
     const [crypto2, setCrypto2] = useState("ethereum");
     const [days, setDays] = useState(30);
@@ -64,11 +64,16 @@ function ComparePage() {
                 coinObject(setCrypto1Data,data1);
                 if(data2)
                  {
+                  
                       coinObject(setCrypto2Data,data2);
                       const prices1=await getCoinPrices(crypto1,days,priceType);
+                  
                       const prices2=await getCoinPrices(crypto2,days,priceType);
+                  
                      settingChartData(setChartData,prices1,prices2);
+                    
                      console.log("BOTH PRICES FETCHED"+prices1,prices2)
+                 
                      setIsLoading(false);
                
                  }
@@ -93,7 +98,6 @@ function ComparePage() {
                 const prices2=await getCoinPrices(crypto2,days,priceType);
                 if(prices1.length>0 && prices2.length>0)
                 {
-                    // settingChartData(setChartData,prices);
                     console.log("BOTH PRICES FETCHED"+prices1,prices2)
                     setIsLoading(false);
                 }
@@ -102,6 +106,13 @@ function ComparePage() {
             setCrypto1(event.target.value);
             const data=await getCoinData(event.target.value);
              coinObject(setCrypto1Data,data);
+             const prices1=await getCoinPrices(crypto1,days,priceType);
+             const prices2=await getCoinPrices(crypto2,days,priceType);
+             if(prices1.length>0 && prices2.length>0)
+             {
+                 console.log("BOTH PRICES FETCHED"+prices1,prices2)
+                 setIsLoading(false);
+             }
                
         }
        
@@ -110,7 +121,7 @@ function ComparePage() {
 
   return (
     <div>
-        <Header/>
+        <Header handleChange={handleChange}/>
         {isLoading?(
         <Loader/>
         ) : (

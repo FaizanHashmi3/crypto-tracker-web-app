@@ -2,11 +2,11 @@ import React from 'react'
 import Header from '../Common/Header'
 import MainComponent from '../LandingPage/MainComponent'
 
-function HomePage() {
+function HomePage({handleChange}) {
   return (
     <div >
           
-          <Header/>
+          <Header handleChange={handleChange}/>
            <MainComponent/>
           
         
