@@ -13,7 +13,7 @@ import LineChart from '../Coin/LineChart';
 import PriceType from '../Coin/PriceType';
 import TogglePriceType from '../Coin/PriceType';
 
-function ComparePage({handleChange}) {
+function ComparePage() {
     const [crypto1, setCrypto1] = useState("bitcoin");
     const [crypto2, setCrypto2] = useState("ethereum");
     const [days, setDays] = useState(30);
@@ -121,7 +121,7 @@ function ComparePage({handleChange}) {
 
   return (
     <div>
-        <Header handleChange={handleChange}/>
+        <Header/>
         {isLoading?(
         <Loader/>
         ) : (

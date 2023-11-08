@@ -8,7 +8,7 @@ import Loader from '../Common/Loader';
 import BackToTop from '../Common/BackToTop';
 import { get100Coins } from '../functions/get100Coins';
 
-function DashboardPage({handleChange}) {
+function DashboardPage() {
     const [search, setSearch] = useState("");
     const [paginatedCoins,setpaginatedCoins]=useState([]);
     const [coins,setCoins]=useState([]);
@@ -44,7 +44,7 @@ function DashboardPage({handleChange}) {
     }
   return (
     <>
-     <Header handleChange={handleChange}/>
+     <Header />
      <BackToTop/>
     {isLoading ? (
     <Loader/> 

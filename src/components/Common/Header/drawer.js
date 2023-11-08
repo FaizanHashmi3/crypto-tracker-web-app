@@ -15,10 +15,8 @@ import {IconButton} from "@mui/material"
 import { Link } from 'react-router-dom';
 import { Switch } from "@mui/material";
 
-export default function TemporaryDrawer({handleChange}) {
+export default function TemporaryDrawer({toggleTheme}) {
   const [open, setOpen] = React.useState(false);
-  
-  const [flag, setFlag] = React.useState(true);
   
 
   
@@ -40,9 +38,7 @@ export default function TemporaryDrawer({handleChange}) {
         <Switch 
           defaultChecked
           
-       onChange={()=>{
-        setFlag(!flag);
-        handleChange(flag)}}
+       onChange={()=>toggleTheme()}
       />
        </div> 
      </Drawer>
