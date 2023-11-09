@@ -15,17 +15,14 @@ and view graphical representations of cryptocurrency performance. The app fetche
 # UI View
 
 
-![Screenshot (16)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/1dfc3cc7-3628-4500-ae19-ea6fc730d3ac)
-![Screenshot (25)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/799ce12d-a1c0-4369-a4ff-3adcb8c6add7)
-![Screenshot (24)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/c8522079-bdd1-4e65-86a6-460c8f7356ca)
-![Screenshot (23)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/95ebde95-8e82-4963-b187-d22cd28faedb)
-![Screenshot (22)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/3d6dc665-b053-4b5a-8e1a-d669827b6cb6)
-![Screenshot (21)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/3f247e39-194c-4e2f-99dc-d5e20212e331)
-![Screenshot (20)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/b1113a33-733b-4deb-9067-3b4b847dd65f)
-![Screenshot (19)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/8274e8e9-1216-4e5c-9668-799b7904ea41)
-![Screenshot (18)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/50240fb1-51d6-4aa8-87e6-e91e2b3eb60b)
-![Screenshot (17)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/cc8b6d58-884c-40d8-b55d-acea156c39a3)
 
+![Screenshot (16)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/5a87f09d-0dfe-4cee-bd6a-3520cfa23b5a)
+![Screenshot (25)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/fe6ade34-8bdd-4927-920a-c3e0eac91320)
+![Screenshot (24)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/2b50954f-1c50-4f9a-b241-ff9e4758c832)
+![Screenshot (23)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/5e61e21c-cfe7-4c27-b1da-bc2df84602bd)
+![Screenshot (21)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/c998828d-ed24-4366-b8a6-71ab8f342fe2)
+![Screenshot (19)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/b9879b96-9bc1-4a43-bad7-e6fe1abfa001)
+![Screenshot (18)](https://github.com/FaizanHashmi3/crypto-tracker-web-app/assets/96041026/67828992-d24f-46cb-a3d7-565bc5b524a0)
 
 # Getting Started
 To run this app locally on your machine, follow these steps:
