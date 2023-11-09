@@ -36,15 +36,12 @@ To run this app locally on your machine, follow these steps:
 
   cd crypto-tracker-web-app
   Install Dependencies:
-
-
-  npm install
+   npm install
+  
   Start the Development Server:
-
-
   npm start
+  
   Open the App:
-
   Open your web browser and visit http://localhost:3000 to use the Crypto Tracker Web App.
 
 # Usage
