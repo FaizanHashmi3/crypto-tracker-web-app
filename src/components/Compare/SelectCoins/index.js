@@ -53,7 +53,7 @@ function SelectCoins({crypto1,crypto2,handleCoinChange}) {
             sx={styles}
            value={crypto1}
           label="Crypto 1"
-          onChange={(event)=>handleCoinChange(event,true)}
+          onChange={(event)=>handleCoinChange(event,false)}
     >
         
     {allCoins.filter((item)=> item.id != crypto2).map((coin,i)=>(
